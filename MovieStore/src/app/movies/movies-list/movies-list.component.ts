@@ -12,4 +12,8 @@ export class MoviesListComponent implements OnInit{
 
   @Input()
   movies:any[] = [];
+
+  remove(index:number){
+    this.movies.splice(index,1);
+  }
 }
