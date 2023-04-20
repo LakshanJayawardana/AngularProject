@@ -1,13 +1,8 @@
-<p>Hellow World {{title}}</p>
-<div>
-  Return value {{duplicateNumber(4)}}
-</div>
-<h2>Movie Data</h2>
 
-<div *ngFor="let movie of movies; let index=index" class="movie-container">
+<h2>In Theaters</h2>
+<app-movies-list [movies]="moviesInTheaters"></app-movies-list>
 
-  <h1>{{index+1}}){{movie.title | uppercase}}</h1>
-  <h2>{{movie.releaseDate | date:"mm-dd-yyyy"}}</h2>
-  <h2>{{movie.price | currency}}</h2>
 
-</div>
+<h2>Future Releases</h2>
+<app-movies-list [movies]="moviesFutureReleases"></app-movies-list>
+
