@@ -14,36 +14,23 @@ export class AppComponent implements OnInit {
         releaseDate :Date(),
         price : 1999.99
       },
+      
       {
         title :'Iron Man',
         releaseDate :Date(),
         price : 1999.99
       },
-      {
-        title :'Ice Age',
-        releaseDate :Date(),
-        price : 1999.99
-      },
-      {
-        title :'Ice Men',
-        releaseDate :Date(),
-        price : 1999.99
-      },
-      {
-        title :'Iron Man',
-        releaseDate :Date(),
-        price : 1999.99
-      },
-      {
-        title :'Ice Age',
-        releaseDate :Date(),
-        price : 1999.99
-      }
+      
     ]
   }
 
   moviesInTheaters : any[] = [];
   moviesFutureReleases : any[] = [];
-  title = 'Movie app';
+  title = 'any value';
+
+
+  handleRating(rate:number){
+    alert(`The user selected ${rate}`);
+  }
 }
 
