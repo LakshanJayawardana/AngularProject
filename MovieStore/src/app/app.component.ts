@@ -5,32 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
-  ngOnInit(): void {
-    this.moviesInTheaters = [];
-    this.moviesFutureReleases = [
-      {
-        title :'Ice Men',
-        releaseDate :Date(),
-        price : 1999.99
-      },
-      
-      {
-        title :'Iron Man',
-        releaseDate :Date(),
-        price : 1999.99
-      },
-      
-    ]
-  }
-
-  moviesInTheaters : any[] = [];
-  moviesFutureReleases : any[] = [];
+export class AppComponent{
+  
   title = 'any value';
-
-
-  handleRating(rate:number){
-    alert(`The user selected ${rate}`);
-  }
 }
 
