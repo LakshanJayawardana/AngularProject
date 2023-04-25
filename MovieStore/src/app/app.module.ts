@@ -21,6 +21,7 @@ import { EditActorsComponent } from './actors/edit-actors/edit-actors.component'
 import { EditGenreComponent } from './genres/edit-genre/edit-genre.component';
 import { EditMovieTheatersComponent } from './movie-theaters/edit-movie-theaters/edit-movie-theaters.component';
 import { EditMoviesComponent } from './movies/edit-movies/edit-movies.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { EditMoviesComponent } from './movies/edit-movies/edit-movies.component'
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
