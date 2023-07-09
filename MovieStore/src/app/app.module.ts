@@ -23,6 +23,9 @@ import { EditMovieTheatersComponent } from './movie-theaters/edit-movie-theaters
 import { EditMoviesComponent } from './movies/edit-movies/edit-movies.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import { MoviesFutureComponent } from './movies-future/movies-future.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { PopupNoteComponent } from './genres/popup-note/popup-note.component';
+
 
 @NgModule({
   declarations: [
@@ -43,14 +46,17 @@ import { MoviesFutureComponent } from './movies-future/movies-future.component';
     EditGenreComponent,
     EditMovieTheatersComponent,
     EditMoviesComponent,
-    MoviesFutureComponent
+    MoviesFutureComponent,
+    PopupNoteComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
