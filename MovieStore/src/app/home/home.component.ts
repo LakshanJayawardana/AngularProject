@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MoviesService } from '../core/services/movies.service';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent{
+  items: any[] = [];
+  constructor(private movieService : MoviesService ) { }
   ngOnInit(): void {
     this.moviesInTheaters = [];
     this.moviesFutureReleases = [
@@ -21,7 +24,10 @@ export class HomeComponent{
         price : 1999.99
       },
       
-    ]
+    ],
+    this.movieService.getAllProducts().subscribe(response => {
+      this.items = response;
+    });
   }
 
   moviesInTheaters : any[] = [];
