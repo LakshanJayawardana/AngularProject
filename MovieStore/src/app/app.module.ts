@@ -12,6 +12,10 @@ import { CreateActorComponent } from './actors/create-actor/create-actor.compone
 import { IndexActorsComponent } from './actors/index-actors/index-actors.component';
 import { EditActorsComponent } from './actors/edit-actors/edit-actors.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { MoviesFutureComponent } from './movies-future/movies-future.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { PopupNoteComponent } from './genres/popup-note/popup-note.component';
+
 
 @NgModule({
   declarations: [
